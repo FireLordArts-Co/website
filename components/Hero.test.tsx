@@ -3,5 +3,5 @@ import Hero from '@/components/Hero'
 
 test('renders brand title', () => {
   render(<Hero />)
-  expect(screen.getByText("Firelord Arts")).toBeInTheDocument()
+  expect(screen.getByText("FireLord Arts")).toBeInTheDocument()
 })
