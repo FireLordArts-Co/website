@@ -34,11 +34,11 @@ export default function Hero() {
     {/* Content */}
     <div className="relative z-10 max-w-prose px-md">
       <h1 className="text-hero leading-hero font-bold tracking-wide">
-        Firelord Arts
+        FireLord Arts
       </h1>
 
       <p className="mt-md text-body text-text-muted">
-        Polynesian-inspired tiki carvings & island artifacts
+        {/* Polynesian-inspired tiki carvings & island artifacts */}
       </p>
 
       {/* Actions */}
