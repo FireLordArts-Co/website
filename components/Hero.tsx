@@ -1,57 +1,50 @@
 'use client'
 
-import { useState } from 'react'
-
 export default function Hero() {
-  // const [glow, setGlow] = useState(false)
-
   return (
-    <section
-      className="relative flex min-h-screen items-center justify-center overflow-hidden text-center"
-      // onMouseEnter={() => setGlow(true)}
-      // onMouseLeave={() => setGlow(false)}
-    >
+    <section className="relative h-[90vh] flex items-center justify-center text-white">
+      
+      {/* Background Image */}
+      <img
+        src="/images/IMG_5696.jpg"
+        alt="Hero"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
-    {/* Background texture layer (optional image) */}
-    {/* <div className="absolute inset-0 bg-[url('/tiki-texture.jpg')] bg-cover bg-center opacity-20" /> */}
+      {/* Dark + Fire Gradient Overlay */}
+      <div className="absolute inset-0 bg-black/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-orange-900/30" />
 
-    {/* Dark atmospheric overlay */}
-    {/* <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" /> */}
+      {/* Content */}
+      <div className="relative text-center px-4 max-w-2xl">
+        
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Forged by Hand.
+          <br />
+          Inspired by Flame.
+        </h1>
 
-    {/* Ambient glow */}
-    {/* <div
-      className={`absolute inset-0 blur-3xl transition-all duration-base ${
-        glow ? 'opacity-20 bg-accent-glow' : 'opacity-10 bg-accent'
-      }`}
-    /> */}
+        <p className="text-white/80 mb-8 text-lg">
+          Unique artwork blending natural materials with bold design.
+        </p>
 
-    <div
-      className={`absolute inset-0 blur-3xl ${
-        'opacity-20 bg-accent-glow'
-      }`}
-    />
+        <div className="flex justify-center gap-4">
+          <a
+            href="#gallery"
+            className="px-6 py-3 bg-orange-500 hover:bg-orange-600 rounded-full font-semibold transition"
+          >
+            View Gallery
+          </a>
 
-    {/* Content */}
-    <div className="relative z-10 max-w-prose px-md">
-      <h1 className="text-hero leading-hero font-bold tracking-wide">
-        FireLord Arts
-      </h1>
+          <a
+            href="#contact"
+            className="px-6 py-3 border border-white/30 hover:border-white rounded-full transition"
+          >
+            Contact
+          </a>
+        </div>
 
-      <p className="mt-md text-body text-text-muted">
-        {/* Polynesian-inspired tiki carvings & island artifacts */}
-      </p>
-
-      {/* Actions */}
-      {/* <div className="mt-xl flex justify-center gap-md">
-        <button className="rounded-full bg-accent px-lg py-md font-semibold text-black transition-all duration-base hover:bg-accent-pressed hover:shadow-glow">
-          View Gallery
-        </button>
-
-        <button className="rounded-full border border-wood px-lg py-md text-text-muted transition-all duration-base hover:bg-bg-elevated hover:text-text-primary">
-          Commission Work
-        </button>
-      </div> */}
-    </div>
+      </div>
     </section>
   )
 }
