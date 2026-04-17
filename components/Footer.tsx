@@ -2,7 +2,7 @@ import BrandIcon from './BrandIcon'
 
 export default function Footer() {
   return (
-    <footer className="bg-black mt-24">
+    <footer className="bg-bg-primary mt-24">
       
       <div className="max-w-6xl mx-auto px-4 py-16 grid gap-20 md:grid-cols-4">
         
@@ -19,7 +19,8 @@ export default function Footer() {
           <h4 className="font-semibold mb-4">Explore</h4>
           <ul className="space-y-2 opacity-80">
             <li><a href="/" className="hover:text-orange-400 transition">Home</a></li>
-            <li><a href="/shop" className="hover:text-orange-400 transition">Shop</a></li>
+            {/* <li><a href="/shop" className="hover:text-orange-400 transition">Shop (Coming Soon)</a></li> */}
+            <li><p className="inline hover:text-orange-400 cursor-pointer transition">Shop (Coming Soon)</p></li>
             <li><a href="/gallery" className="hover:text-orange-400 transition">Gallery</a></li>
             {/* <li><a href="/about" className="hover:text-orange-400 transition">About</a></li> */}
             {/* <li><a href="/contact" className="hover:text-orange-400 transition">Contact</a></li> */}
