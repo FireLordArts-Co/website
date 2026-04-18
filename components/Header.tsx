@@ -108,6 +108,30 @@ export default function Header() {
                 {/* <Link href="/contact" className="hover:text-orange-400 transition">Contact</Link> */}
               </nav>
             </div>
+
+            <div className="flex md:hidden items-center p-10 gap-10 ml-auto mt-auto">
+              <a
+                href="https://www.instagram.com/firelord_arts/"
+                target="_blank"
+                className="hover:text-orange-400 transition group"
+              >
+                <BrandIcon
+                  name="instagram"
+                  className="w-5 h-5"
+                />
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@firelordthomas"
+                target="_blank"
+                className="hover:text-orange-400 transition group"
+              >
+                <BrandIcon
+                  name="tiktok"
+                  className="w-5 h-5"
+                />
+              </a>
+            </div>
           </div>
         </div>
         
