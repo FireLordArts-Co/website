@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -35,13 +38,15 @@ export default function RootLayout({
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,120,0,0.18),transparent_70%)]" />
 
             {/* Noise texture (final detail layer) */}
-            <div className="absolute inset-0 opacity-10 bg-[url('/images/noise1.png')] bg-repeat" />
+            <div className="absolute inset-0 opacity-10 bg-[url('/images/noise.png')] bg-repeat" />
 
           </div>
 
           {/* Content */}
           <div className="relative z-10">
+            <Header />
             {children}
+            <Footer />
           </div>
 
         </div>
