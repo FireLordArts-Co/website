@@ -25,7 +25,7 @@ export default function Header() {
         fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black/20 via-black/10 to-orange-900/10
         transition-[height,background-color,backdrop-filter] duration-300 ease-in-out
         bg-bg-elevated  backdrop-blur-md'
-        ${scrolled ? 'h-24 md:h-14' : 'h-32 md:h-20'}
+        ${scrolled ? 'h-16 md:h-14' : 'h-22 md:h-20'}
       `}
     >
       <div className="w-full h-full flex items-center justify-between mx-auto px-5 md:px-12">
@@ -95,7 +95,7 @@ export default function Header() {
             <h1
               className={`
                 font-bold tracking-wider leading-none transition-all duration-300
-                ${scrolled ? 'text-3xl md:text-3xl' : 'text-4xl md:text-4xl'}
+                ${scrolled ? 'text-2xl md:text-3xl' : 'text-3xl md:text-4xl'}
               `}
             >
               FireLord Arts
@@ -109,7 +109,7 @@ export default function Header() {
                   : 'opacity-100 translate-y-0 max-h-10 scale-100 pointer-events-auto'}
               `}
             >
-              <h2 className="text-sm md:text-sm tracking-widest text-text-muted mt-0.5">
+              <h2 className="text-xs md:text-sm tracking-widest text-text-muted mt-0.5">
                 {"Handcrafted Decor".toLocaleUpperCase()}
               </h2>
             </div>

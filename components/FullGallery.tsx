@@ -24,7 +24,6 @@ export default function GalleryPage() {
     { id: 18, src: 'IMG_5227.jpg', title: 'Long Tiki Gray' },
     { id: 23, src: 'IMG_6418.jpg', title: 'Postcards' },
     { id: 15, src: 'IMG_4653.jpg', title: 'Piece 15' },
-    { id: 21, src: 'IMG_6353.jpg', title: 'Stickers' },
     { id: 24, src: 'IMG_6423.jpg', title: 'Piece 24' },
     { id: 22, src: 'IMG_6391.jpg', title: 'Piece 22' },
     { id: 20, src: 'IMG_6326.jpg', title: 'Piece 20' },
@@ -41,13 +40,13 @@ export default function GalleryPage() {
   ])
 
   return (
-    <main className="max-w-6xl mx-auto px-4 pt-18 md:pt-8">
+    <main className="max-w-6xl mx-auto px-4 pt-10 md:pt-8">
       
-      <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
+      <h1 className="text-2xl md:text-5xl font-bold text-center mb-2">
         Gallery
       </h1>
 
-      <p className="text-center text-text-muted text-lg mb-8">
+      <p className="text-center text-text-muted text-md md:text-lg mb-8">
         A collection of handcrafted pieces
       </p>
 

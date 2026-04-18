@@ -29,7 +29,7 @@ export default function RootLayout({
             />
 
             {/* Dark base overlay (keeps readability) */}
-            <div className="absolute inset-0 bg-black/84" />
+            <div className="absolute inset-0 bg-black/88" />
 
             {/* Orange tint (your FireLord tone) */}
             <div className="absolute inset-0 bg-orange-900/20" />

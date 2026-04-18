@@ -10,7 +10,7 @@ export default function Hero() {
       <img
         src="/images/aloha.jpg"
         alt="Hero"
-        className="absolute pt-[13vh] md:pt-[-0%] inset-0 w-full h-full object-cover object-[50%_%] md:object-[50%_47%]"
+        className="absolute pt-[8vh] md:pt-[-0%] inset-0 w-full h-full object-cover object-[50%_%] md:object-[50%_47%]"
       />
 
       {/* Dark + Fire Gradient Overlay */}
@@ -56,14 +56,14 @@ export default function Hero() {
       <div className="relative w-full h-full flex items-center justify-center">
 
         {/* TEXT (independent position) */}
-        <div className="absolute top-[-15%] md:top-[18%] text-center px-4 max-w-5xl">
+        <div className="absolute top-[-14%] md:top-[18%] text-center px-4 max-w-5xl">
           <h1 className="text-3xl md:text-5xl font-bold mb-3 tracking-wide leading-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]">
             Designed, Carved, Textured by Hand.
           </h1>
 
-          <p className="text-lg md:text-xl text-text-muted tracking-widest drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)]">
+          <p className="text-xs md:text-xl text-text-muted tracking-widest drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)]">
             {'NEW & UNIQUE PIECES '}
-            <br className="md:hidden" />
+            {/* <br className="md:hidden" /> */}
             {'ALWAYS IN THE MAKING'}
           </p>
         </div>
