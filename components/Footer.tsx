@@ -19,10 +19,30 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Explore</h4>
           <ul className="space-y-2 opacity-80">
-            <li><Link href="/" className="hover:text-orange-400 transition">Home</Link></li>
+            <li>
+              <a
+                href="/"
+                className="hover:text-orange-400 transition"
+              >
+                Home
+              </a>
+            </li>
             {/* <li><Link href="/shop" className="hover:text-orange-400 transition">Shop (Coming Soon)</Link></li> */}
-            <li><p className="inline hover:text-orange-400 cursor-default transition">Shop (Coming Soon)</p></li>
-            <li><Link href="/gallery" className="hover:text-orange-400 transition">Gallery</Link></li>
+            <li>
+              <a
+                href="/gallery"
+                className="hover:text-orange-400 transition"
+              >
+                Gallery
+              </a>
+            </li>
+            <li>
+              <p
+                className="inline hover:text-orange-400 cursor-default transition"
+              >
+                Shop (Coming Soon)
+              </p>
+            </li>
             {/* <li><Link href="/about" className="hover:text-orange-400 transition">About</Link></li> */}
             {/* <li><Link href="/contact" className="hover:text-orange-400 transition">Contact</Link></li> */}
           </ul>

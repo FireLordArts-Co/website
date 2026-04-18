@@ -48,7 +48,7 @@ export default function GalleryPage() {
           href="/gallery"
           className="
             px-6 py-3 
-            bg-orange-500 hover:bg-orange-600
+            bg-orange-500 hover:bg-orange-600 active:bg-orange-700
             rounded-xl font-semibold
             transition-all duration-200
             shadow-lg hover:shadow-xl
