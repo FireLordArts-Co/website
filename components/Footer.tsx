@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         {/* Contact */}
-        <div>
+        <div id='contact'>
           <h4 className="font-semibold mb-4">Contact</h4>
           <ul className="space-y-2 opacity-80">
             <li>

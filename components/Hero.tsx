@@ -84,7 +84,19 @@ export default function Hero() {
             View Gallery
           </Link>
 
-          <Link
+          <a
+            href="#contact"
+            className="
+              px-4 py-2 sm:px-6 sm:py-3
+              text-sm sm:text-base
+              border border-white/30 hover:border-white active:bg-white/10
+              rounded-full transition
+            "
+          >
+            Contact
+          </a>
+
+          {/* <Link
             href="/contact"
             className="
               px-4 py-2 sm:px-6 sm:py-3
@@ -94,7 +106,7 @@ export default function Hero() {
             "
           >
             Contact
-          </Link>
+          </Link> */}
         </div>
 
       </div>

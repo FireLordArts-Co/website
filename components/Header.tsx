@@ -45,33 +45,67 @@ export default function Header() {
         <div
           className={`
             fixed top-0 left-0 h-full w-72 bg-wood z-40
-            transform transition-transform duration-300 ease-in-out
+            transform transition-transform duration-100 ease-in-out
             shadow-[8px_0_20px_rgba(0,0,0,0.25)]
-            ${menuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-75'}
+            ${menuOpen ? 'translate-x-0' : '-translate-x-full'}
           `}
         >
           <div className="flex flex-col h-full">
             {/* X */}
-            <div className="p-4 flex justify-end">
+            <div className="px-5 py-3 flex justify-end">
               <button
                 onClick={() => setMenuOpen(false)}
                 className={`
                   group cursor-pointer p-2 rounded-md hover:bg-white/0 transition
                 `}
               >
-                <X className="w-6.5 h-6.5 group-hover:text-orange-400 transition" />
+                <X className="w-7.5 h-7.5 md:w-6.5 md:h-6.5 group-hover:text-orange-400 transition" />
               </button>
             </div>
 
             {/* Divider */}
-            <div className="border-b border-white/10 w-7/8 mx-auto mt-4" />
+            <div className="border-b border-white/10 w-7/8 mx-auto" />
             
             {/* Nav */}
-            <div className="p-10 text-xl">
-              <nav className="flex flex-col gap-4 opacity-80 mt-6">
-                <Link href="/gallery" className="hover:text-orange-400 transition">Gallery</Link>
+            <div className="px-8 text-xl">
+              <nav className="flex flex-col gap-2 opacity-80 mt-6">
+                <Link
+                  href="/"
+                  onClick={(e) => {
+                    setMenuOpen(false)
+
+                    if (window.location.pathname === '/') {
+                      e.preventDefault()
+                      window.scrollTo({ top: 0, behavior: 'instant' })
+                    }
+                  }}
+                  className="hover:text-orange-400 transition"
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/gallery"
+                  onClick={(e) => {
+                    setMenuOpen(false)
+
+                    if (window.location.pathname === '/gallery') {
+                      e.preventDefault()
+                      window.scrollTo({ top: 0, behavior: 'instant' })
+                    }
+                  }}
+                  className="hover:text-orange-400 transition"
+                >
+                  Gallery
+                </Link>
+                <a
+                  href="#contact"
+                  onClick={() => setMenuOpen(false)}
+                  className="hover:text-orange-400 transition"
+                >
+                  Contact
+                </a>
                 <span className="opacity-50 cursor-default">Store (Coming Soon)</span>
-                <span className="opacity-50 cursor-default">Contact (Coming Soon)</span>
+                {/* <Link href="/contact" className="hover:text-orange-400 transition">Contact</Link> */}
               </nav>
             </div>
           </div>
@@ -91,6 +125,12 @@ export default function Header() {
         <div className="flex-1 flex justify-center">
           <Link
             href="/"
+            onClick={(e) => {
+              if (window.location.pathname === '/') {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: 'instant' })
+              }
+            }}
             className="flex flex-col items-center leading-none text-center"
           >
             <h1
@@ -141,9 +181,13 @@ export default function Header() {
             />
           </a>
 
-          <Link href="/contact" className="hidden sm:block group">
+          {/* <Link href="/contact" className="hidden sm:block group">
             <Mail className="w-5.5 h-5.5 group-hover:text-orange-400 transition" />
-          </Link>
+          </Link> */}
+          
+          <a href="#contact" className="hidden sm:block group">
+            <Mail className="w-5.5 h-5.5 group-hover:text-orange-400 transition" />
+          </a>
 
           <div className="relative flex flex-col items-center group">
             <ShoppingBag className="w-5.5 h-5.5 opacity-30" />
